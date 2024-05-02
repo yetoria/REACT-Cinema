@@ -1,0 +1,103 @@
+*{
+  font-family: "Poppins", sans-serif;
+  background-image: radial-gradient(circle, #191919, #040404);
+  cursor: default;
+}
+
+.title {
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.5;
+  margin: 0 1%;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+}
+
+.title:hover {
+  color: #563d7c;
+}
+
+.Favorites {
+  margin-right: 0 1%;
+}
+:root{
+
+}
+
+.navbar{
+  background-color: black;
+}
+
+.search{
+  color: #563d7c;
+  cursor: pointer;
+}
+
+.search:hover{
+  color:white;
+  cursor: default;
+}
+
+.fa-star{
+  color:white;
+  margin-right: 0 1%;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.fa-magnifying-glass{
+  color: white;
+  cursor: pointer;
+}
+
+.movie-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.movie-card img {
+  transition: filter 0.3s ease;
+  width: 100%;
+  height: auto;
+}
+
+.movie-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.movie-card:hover .movie-description {
+  opacity: 1;
+}
+
+.movie-description p {
+  font-size: 0.8rem;
+}
+
+.movie-card {
+  position: relative;
+}
+
+.favorite-heart {
+  position: absolute;
+  top: 10px; 
+  right: 10px; 
+  z-index: 10; 
+  background-color:transparent;
+}
